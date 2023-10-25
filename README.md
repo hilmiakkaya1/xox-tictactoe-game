@@ -51,7 +51,7 @@ This Ruby program simulates a simple board game with "X" and "O". The program al
 ```
  O | X |   
 -----------
-   | X | O  
+   | X |   
 -----------
    | X | O  
 
