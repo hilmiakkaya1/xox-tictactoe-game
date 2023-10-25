@@ -1,19 +1,62 @@
-# Numeric Lotto Program
+# Tic Tac Toe Game For Ruby
 
-This code randomly selects 6 numbers from the numbers between 1 and 49, sorts them and prints them on the screen. In this way it creates a "Lotto" like random number combination. Here is how this code works:
+This Ruby program simulates a simple board game with "X" and "O". The program allows players to take turns making moves, checks for a winner or a tie, and displays the game board on the screen.
 
-1. `lotto_numbers = (1..49).to_a.sample(6)` creates an array of numbers between 1 and 49 (an array containing every number from 1 to 49) and then randomly selects 6 numbers from that array.
+## How is run
 
-2. `lotto_numbers.sort!` line sorts the 6 selected numbers in descending order. This makes the lotto numbers appear in an ordered way.
+1. Install Ruby on your computer. You can download it from [Ruby Official Website](https://www.ruby-lang.org/).
 
-3. `The line puts "6 random numbers selected for you:"` prints a caption on the screen telling the user which numbers have been selected.
+2. Clone this GitHub repository or download it as a ZIP file.
 
-4. `puts lotto_numbers.join(', ')` prints the 6 selected numbers separated by commas.
+    ```bash
+    git clone (https://github.com/hilmiakkaya1/xox-tictactoe-game/blob/master/xox.rb).
+    ```
 
-An example output could look like this:
+3. Go to project directory:
+
+    ```bash
+    cd xox-tictactoe-game
+    ```
+
+4. `xox.rb` run the file:
+
+    ```bash
+    ruby xox.rb
+    ```
+
+5. Start the game and take turns making your moves.
+
+## How to play
+
+- The game board is represented by cells numbered from 1 to 9. To make a move in a cell, you need to enter the number of that cell.
+
+- The game alternates between "X" and "O". Each player, on his turn, must enter a cell number and make a move in that cell.
+
+- The winner is declared when three "X" or three "O" are found in the same row, column or diagonal.
+
+- If the board is full and there is no winner, the game ends in a draw.
+
+## Rules of the Game
+
+- The game board is a 3x3 square.
+
+- Players take turns to make moves and fill the cells on the game board.
+
+- A winner is declared when three "X" or three "O" are found in the same row, column or diagonal.
+
+- If the board is full and there is no winner, the game ends in a draw.
+
+## Screenshot for the game
+
 ```
-6 random numbers chosen for you:
-3, 10, 17, 34, 39, 48
+ O | X |   
+-----------
+   | X | O  
+-----------
+   | X | O  
+
+Congratulations, X wins!
 ```
 
-Each time you run it, you get different random numbers because the sample(6) function selects different numbers each time.
+
+
